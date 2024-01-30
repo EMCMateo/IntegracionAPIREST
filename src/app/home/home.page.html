@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-content [fullscreen]="true">
+    <div class="xdd">
+  <ion-card color="black">
+    <ion-card-header>
+      <ion-item>
+        <ion-input label="Id" type="number" name="id" [(ngModel)]="Buscar"></ion-input>
+      </ion-item>
+      <ion-button  color="success" (click)="getPokemonDataID(Buscar)" >GET</ion-button>
+      <ion-card-title class="xd"> {{pokemon}}</ion-card-title>
+    </ion-card-header>
+   
+    <img [src]="img">
+  </ion-card>
+
+
+  
+  <ion-card color="black">
+    <ion-card-header>
+      <ion-item>
+        <ion-input label="nombre" type="text" name="nombre" [(ngModel)]="nameBuscar"></ion-input>
+      </ion-item>
+      <ion-button  color="success" (click)="getPokemonDataName(nameBuscar)">GET</ion-button>
+      <ion-card-title class="xd"> {{IDP}} </ion-card-title>
+    </ion-card-header>
+    <img [src]="img2">
+  </ion-card>
+
+  <ion-card color="black">
+    <ion-card-header>
+      <ion-item>
+        <ion-input label="nombre de Item" type="text" name="nombreItem" [(ngModel)]="nameIBuscar"></ion-input>
+      </ion-item>
+      <ion-button  color="success" (click)="getItemName(nameIBuscar)">GET</ion-button>
+      <ion-card-title class="xd"> {{idItem}} </ion-card-title>
+    </ion-card-header>
+    <img [src]="img3"></ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-input label="IDItem" type="number" name="idI" [(ngModel)]="IDITBuscar"></ion-input>
+      </ion-item>
+    
+      <ion-button color="success" (click)="getItemID(IDITBuscar)">GET</ion-button>
+    
+    <ion-card-title class="xd"> {{item}} </ion-card-title>
+  </ion-card-header>
+    <img [src]="img4"> 
+  </ion-card> 
+    </div>
+</ion-content>
+</ion-header>

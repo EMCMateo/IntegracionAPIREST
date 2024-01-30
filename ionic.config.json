@@ -1,0 +1,7 @@
+{
+  "name": "APImol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
